@@ -1,5 +1,8 @@
 
 import './App.css'
+import Banner from './Components/Banner/Banner'
+import Navbar from './Components/Navbar/Navbar'
+import Recipes from './Components/Recipes/Recipes'
 
 function App() {
   
@@ -7,7 +10,9 @@ function App() {
   return (
     <>
       
-      <h1 className='text-3xl '>Cooking Recipes</h1>
+      <Navbar></Navbar>
+      <Banner></Banner>
+      <Recipes></Recipes>
       
     </>
   )

@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Chicken Stir-Fry",
+      "short_description": "A delicious and healthy chicken stir-fry with vegetables.",
+      "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaves", "400 g mushroom", "2 cloves garlic, minced", "1 onion, sliced", "1 red bell pepper, sliced", "1 green bell pepper, sliced"],
+      "preparing_time": "30 minutes",
+      "calories": 350,
+      "recipe_image": "https://i.ibb.co/n7ThYv2/stir-fry-chicken-sweet-peppers-green-beans.jpg"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Vegetable Pasta",
+      "short_description": "A comforting and flavorful pasta dish loaded with fresh vegetables.",
+      "ingredients": ["400 g pasta", "2 cups cherry tomatoes, halved", "1 zucchini, diced", "1 yellow squash, diced", "1/2 cup grated Parmesan cheese", "3 tbsp olive oil", "2 cloves garlic, minced", "1 tsp dried oregano", "Salt and pepper to taste"],
+      "preparing_time": "25 minutes",
+      "calories": 300,
+      "recipe_image": "https://i.ibb.co/kK295Lf/prepared-dish-fusilli-with-tomato-broccoli.jpg"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Grilled Salmon",
+      "short_description": "Healthy and delicious grilled salmon seasoned with herbs.",
+      "ingredients": ["4 salmon fillets", "2 tbsp olive oil", "2 tbsp lemon juice", "2 cloves garlic, minced", "1 tsp dried dill", "Salt and pepper to taste"],
+      "preparing_time": "20 minutes",
+      "calories": 250,
+      "recipe_image": "https://i.ibb.co/WK1DRgB/fish-fillet-frilled-served-lettuce-leaf-with-onion-lemon.jpg"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Mushroom Risotto",
+      "short_description": "Creamy and flavorful risotto with mushrooms.",
+      "ingredients": ["1 cup Arborio rice", "400 g mushrooms, sliced", "1 onion, diced", "2 cloves garlic, minced", "4 cups vegetable broth", "1/2 cup grated Parmesan cheese", "2 tbsp butter", "2 tbsp olive oil", "1/4 cup white wine (optional)"],
+      "preparing_time": "40 minutes",
+      "calories": 400,
+      "recipe_image": "https://i.ibb.co/bNZ2DvM/vegetarian-risotto-with-fresh-mushrooms-parmesan-cheese-generated-by-ai.jpg"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Caprese Salad",
+      "short_description": "A simple and refreshing salad with tomatoes, mozzarella, and basil.",
+      "ingredients": ["2 large tomatoes, sliced", "200 g fresh mozzarella, sliced", "1/4 cup fresh basil leaves", "2 tbsp balsamic glaze", "2 tbsp olive oil", "Salt and pepper to taste"],
+      "preparing_time": "15 minutes",
+      "calories": 200,
+      "recipe_image": "https://i.ibb.co/7nVJQ8h/salad-caprese-table.jpg"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Veggie Quesadillas",
+      "short_description": "Cheesy and satisfying quesadillas packed with vegetables.",
+      "ingredients": ["4 large flour tortillas", "1 cup shredded cheddar cheese", "1 cup black beans, drained and rinsed", "1 bell pepper, diced", "1/2 cup corn kernels", "1/4 cup diced red onion", "1 tsp cumin", "1/2 tsp chili powder", "Salt and pepper to taste"],
+      "preparing_time": "20 minutes",
+      "calories": 300,
+      "recipe_image": "https://i.ibb.co/C6BHg8f/mexican-quesadilla-wrap-with-chicken-corn-sweet-pepper-salsa.jpg"
+    }
+  ]
+  
