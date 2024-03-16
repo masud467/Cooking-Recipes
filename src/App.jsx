@@ -8,12 +8,28 @@ import Recipes from './Components/Recipes/Recipes'
 
 function App() {
   const [cookItems,setCookItems] = useState([])
+  const [currentCook,setCurrentCook] = useState([])
 
-  const handleCookItems = cook => {
+  const handleCookItems = (cook) => {
     const newCooks = [...cookItems,cook]
-    setCookItems(newCooks)
+    const isExist = cookItems.find(item=> item.recipe_id===cook.recipe_id)
+    if (!isExist){
+      setCookItems(newCooks)
+    }
+    else{
+      alert('Already exist!!')
+      
+    }
+    
   }
-  
+
+   
+    const handleCurrentCook = (current,recipe_id)=> {
+      const newCurrentCook = [...currentCook,current]
+      setCurrentCook(newCurrentCook)
+      const remainingCook = cookItems.filter(item=>item.recipe_id!==recipe_id)
+      setCookItems(remainingCook)
+    }
 
   return (
     <>
@@ -22,8 +38,8 @@ function App() {
       <Banner></Banner>
 
       <div className='flex max-w-7xl mx-auto'>
-          <Recipes handleCookItems={handleCookItems}></Recipes>
-          <Bookmarks cookItems={cookItems}></Bookmarks>
+          <Recipes handleCookItems={handleCookItems} ></Recipes>
+          <Bookmarks handleCurrentCook={handleCurrentCook} currentCook={currentCook} cookItems={cookItems}></Bookmarks>
       </div>
       
     </>

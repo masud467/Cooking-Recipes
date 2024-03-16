@@ -3,19 +3,24 @@ import PropTypes from 'prop-types';
 
 
 
-const Bookmarks = ({cookItems}) => {
+const Bookmarks = ({cookItems,currentCook,handleCurrentCook}) => {
     return (
-        <div className=" w-1/3 mt-10">
+        <div className=" w-1/3 mt-44">
             <h1 className="text-2xl font-bold">Want to cook: {cookItems.length}</h1>
+            
 
             {
-                cookItems.map((cookItem,index)=> <Bookmark key={index} cookItem={cookItem}></Bookmark>)
+                cookItems.map((cookItem,index)=> <Bookmark key={index} handleCurrentCook={handleCurrentCook} cookItem={cookItem}></Bookmark>)
             }
+
+            <h1 className="mt-10 text-2xl font-bold">Currently cooking: {currentCook.length} </h1>   
         </div>
     );
 };
 
 Bookmarks.propTypes = {
-    cookItems : PropTypes.array
+    cookItems : PropTypes.array,
+    handleCurrentCook:PropTypes.func,
+    currentCook : PropTypes.array
 }
 export default Bookmarks;
