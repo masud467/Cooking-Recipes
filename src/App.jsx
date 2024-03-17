@@ -5,6 +5,8 @@ import Banner from './Components/Banner/Banner'
 import Bookmarks from './Components/Bookmarks/Bookmarks'
 import Navbar from './Components/Navbar/Navbar'
 import Recipes from './Components/Recipes/Recipes'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -16,9 +18,11 @@ function App() {
     const isExist = cookItems.find(item=> item.recipe_id===cook.recipe_id)
     if (!isExist){
       setCookItems(newCooks)
+      toast.success("Recipe added");
     }
     else{
-      alert('Already exist!!')
+      toast.warn("Recipe already selected !");
+      
     }
     
   }
@@ -53,7 +57,7 @@ function App() {
           
       </div>
       
-      
+      <ToastContainer/>
     </>
   )
 }
