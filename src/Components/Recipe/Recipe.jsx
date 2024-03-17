@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Bookmark from '../Bookmark/Bookmark';
+
 
 const Recipe = ({recipe,handleCookItems}) => {
     const {recipe_image,recipe_name,short_description,ingredients,preparing_time,calories} = recipe;

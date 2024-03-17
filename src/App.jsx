@@ -6,6 +6,7 @@ import Bookmarks from './Components/Bookmarks/Bookmarks'
 import Navbar from './Components/Navbar/Navbar'
 import Recipes from './Components/Recipes/Recipes'
 
+
 function App() {
   const [cookItems,setCookItems] = useState([])
   const [currentCook,setCurrentCook] = useState([])
@@ -18,7 +19,6 @@ function App() {
     }
     else{
       alert('Already exist!!')
-      
     }
     
   }
@@ -40,7 +40,9 @@ function App() {
       <div className='flex max-w-7xl mx-auto'>
           <Recipes handleCookItems={handleCookItems} ></Recipes>
           <Bookmarks handleCurrentCook={handleCurrentCook} currentCook={currentCook} cookItems={cookItems}></Bookmarks>
+          
       </div>
+      
       
     </>
   )

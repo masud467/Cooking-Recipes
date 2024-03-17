@@ -8,12 +8,16 @@ const Bookmarks = ({cookItems,currentCook,handleCurrentCook}) => {
         <div className=" w-1/3 mt-44">
             <h1 className="text-2xl font-bold">Want to cook: {cookItems.length}</h1>
             
-
+           
             {
-                cookItems.map((cookItem,index)=> <Bookmark key={index} handleCurrentCook={handleCurrentCook} cookItem={cookItem}></Bookmark>)
+                cookItems.map((cookItem,index)=> <Bookmark key={index} handleCurrentCook={handleCurrentCook}  cookItem={cookItem} ></Bookmark>)
             }
 
-            <h1 className="mt-10 text-2xl font-bold">Currently cooking: {currentCook.length} </h1>   
+            <h1 className="mt-10 text-2xl font-bold">Currently cooking: {currentCook.length} </h1>
+            {/* {
+              currentCook.map((currentCook,index)=> <Bookmark key={index} handleCurrentCook={handleCurrentCook}  currentCook={currentCook}></Bookmark>)
+            } */}
+            
         </div>
     );
 };
