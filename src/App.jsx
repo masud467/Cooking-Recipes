@@ -23,13 +23,23 @@ function App() {
     
   }
 
-   
     const handleCurrentCook = (recipe_id,current)=> {
       const newCurrentCook = [...currentCook,current]
       setCurrentCook(newCurrentCook)
       const remainingCook = cookItems.filter(item=>item.recipe_id!==recipe_id)
       setCookItems(remainingCook)
+      
     }
+    // const handleCurrentCook = (current)=> {
+    //   const newCurrentCook = [...currentCook,current]
+    //   // setCurrentCook(newCurrentCook)
+    //   const remainingCook = cookItems.find(item=>item.recipe_id===current.recipe_id)
+    //   if(!remainingCook){
+    //     setCurrentCook(newCurrentCook)
+    //   }
+    //   // setCookItems(remainingCook)
+      
+    // }
 
   return (
     <>
@@ -37,8 +47,8 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
 
-      <div className='flex max-w-7xl mx-auto'>
-          <Recipes handleCookItems={handleCookItems} ></Recipes>
+      <div className='flex max-w-7xl mx-auto gap-8'>
+          <Recipes handleCookItems={handleCookItems}  ></Recipes>
           <Bookmarks handleCurrentCook={handleCurrentCook} currentCook={currentCook} cookItems={cookItems}></Bookmarks>
           
       </div>

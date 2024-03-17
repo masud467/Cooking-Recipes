@@ -11,7 +11,7 @@ const Banner = () => {
            <div className=" ">
                 <div className=" text-white pt-20 pl-36  ">
                     <h1 className=" text-5xl font-bold max-w-4xl  pt-32 px-20">Discover an exceptional cooking class tailored for you!</h1>
-                    <p className="mb-5 max-w-4xl my-6  px-20">Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an exceptionally well world-class Programmer.</p>
+                    <p className="mb-5 max-w-4xl my-6  px-20">Unleash Your Inner Chef: Discover Delectable Delights on Our Cooking Recipe Wonderland!</p>
                     <div className='px-20 space-x-5'>
                     <button className="btn btn-primary p-3 bg-[#0BE58A] rounded-3xl ">Explore Now</button>
                     <button className='btn glass p-3 rounded-3xl bg-gray-600'>Our Facebook</button>

@@ -14,6 +14,7 @@ const Bookmarks = ({cookItems,currentCook,handleCurrentCook}) => {
             }
 
             <h1 className="mt-10 text-2xl font-bold">Currently cooking: {currentCook.length} </h1>
+
             {/* {
               currentCook.map((currentCook,index)=> <Bookmark key={index} handleCurrentCook={handleCurrentCook}  currentCook={currentCook}></Bookmark>)
             } */}
