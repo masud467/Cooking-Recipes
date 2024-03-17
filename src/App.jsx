@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [cookItems,setCookItems] = useState([])
-  const [currentCook,setCurrentCook] = useState([])
+  const [currentCooks,setCurrentCook] = useState([])
 
   const handleCookItems = (cook) => {
     const newCooks = [...cookItems,cook]
@@ -24,14 +24,16 @@ function App() {
       toast.warn("Recipe already selected !");
       
     }
+    console.log('connection it',cook)
     
   }
 
     const handleCurrentCook = (recipe_id,current)=> {
-      const newCurrentCook = [...currentCook,current]
+      const newCurrentCook = [...currentCooks,current]
       setCurrentCook(newCurrentCook)
       const remainingCook = cookItems.filter(item=>item.recipe_id!==recipe_id)
       setCookItems(remainingCook)
+      console.log('connection correctly',current)
       
     }
     // const handleCurrentCook = (current)=> {
@@ -52,8 +54,8 @@ function App() {
       <Banner></Banner>
 
       <div className='flex max-w-7xl mx-auto gap-8'>
-          <Recipes handleCookItems={handleCookItems}  ></Recipes>
-          <Bookmarks handleCurrentCook={handleCurrentCook} currentCook={currentCook} cookItems={cookItems}></Bookmarks>
+          <Recipes handleCookItems={handleCookItems}   ></Recipes>
+          <Bookmarks handleCurrentCook={handleCurrentCook} currentCook={currentCooks} cookItems={cookItems}></Bookmarks>
           
       </div>
       

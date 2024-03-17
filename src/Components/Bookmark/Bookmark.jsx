@@ -2,6 +2,9 @@ import PropTypes from 'prop-types';
 
 
 
+
+
+
 const Bookmark = ({cookItem,currentCook,handleCurrentCook}) => {
     const {recipe_id, recipe_name,preparing_time,calories} = cookItem;
    
@@ -20,10 +23,11 @@ const Bookmark = ({cookItem,currentCook,handleCurrentCook}) => {
                <p>{calories} Calories</p>
                <button onClick={()=>handleCurrentCook(recipe_id,currentCook)} className='  bg-[#0BE58A] p-1 px-4 rounded-full'>Preparing</button>
             </div> 
-
-        </div>
-        
+            
+        </div>  
     )
+
+   
 };
 
 Bookmark.propTypes = {

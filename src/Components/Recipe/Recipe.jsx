@@ -12,12 +12,12 @@ const Recipe = ({recipe,handleCookItems}) => {
             <p>{short_description}</p>
             <p className=' font-semibold text-lg'>Ingredients: {ingredients.length}</p>
             <div className='ml-8'>
-            <li>{ingredients.map((ingredient,i)=>(
+            <div>{ingredients.map((ingredient,i)=>(
                        
                        <li key={i}>{ingredient}</li>
                       
              
-          ))}</li>
+          ))}</div>
             </div>
             <div className='flex gap-6'>
             <div className='flex gap-1'>
@@ -37,6 +37,6 @@ const Recipe = ({recipe,handleCookItems}) => {
 Recipe.propTypes = {
     recipe : PropTypes.object.isRequired,
     handleCookItems :PropTypes.func,
-    
+   
 }
 export default Recipe;
