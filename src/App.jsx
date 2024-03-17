@@ -24,7 +24,7 @@ function App() {
   }
 
    
-    const handleCurrentCook = (current,recipe_id)=> {
+    const handleCurrentCook = (recipe_id,current)=> {
       const newCurrentCook = [...currentCook,current]
       setCurrentCook(newCurrentCook)
       const remainingCook = cookItems.filter(item=>item.recipe_id!==recipe_id)
