@@ -18,7 +18,7 @@ function App() {
     const isExist = cookItems.find(item=> item.recipe_id===cook.recipe_id)
     if (!isExist){
       setCookItems(newCooks)
-      toast.success("Recipe added");
+      // toast.success("Recipe added");
     }
     else{
       toast.warn("Recipe already selected !");
